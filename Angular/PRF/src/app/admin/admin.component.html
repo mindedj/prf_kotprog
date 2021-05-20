@@ -1,0 +1,22 @@
+<div class = "content" role="main">
+    <h2>Admin felület</h2>
+    <div>
+        <label>ID</label>
+        <input type="number" id="id" [(ngModel)]="id" >
+    </div>
+    <div>
+        <label>Ár</label>
+        <input type="number" id="ar" [(ngModel)]="ar" >
+    </div>
+    <div>
+        <label>Név</label>
+        <input type="text" id="nev" [(ngModel)]="nev" >
+    </div>
+    
+    <button (click)="addTermek(id, nev, ar)">Tárgy felvétele</button>
+    <button (click)="modify(id, nev, ar)">Tárgy módosítása</button>
+    <button (click)="torles(id)">Tárgy törlése</button>
+    <button (click)="listTranzakciok()">Tranzakciók listázása</button>
+    <button [routerLink]="['/webshop']">To Webshop</button>
+    <button (click)="logout()">Kijelentkezés</button>
+</div>

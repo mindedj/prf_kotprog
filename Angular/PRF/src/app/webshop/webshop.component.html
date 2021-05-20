@@ -1,0 +1,12 @@
+<div class="content" role="main">
+    <div class="card highlight-card card-small">
+        <span>Webshop</span>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let termek of termekek" (click)="createTranzakcio(termek[1])">{{termek[0]}} {{termek[1]}} Ft</li>
+        </ul>
+    </div>
+    <button [routerLink]="['/admin']">To Admin</button>
+
+</div>
